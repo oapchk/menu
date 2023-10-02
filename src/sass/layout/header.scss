@@ -1,0 +1,11 @@
+@import "../helpers/functions";
+
+.header {
+  background-color: aqua;
+
+  &__inner {
+    margin-inline: auto;
+    width: 100%;
+    max-width: rem(960px);
+  }
+}
