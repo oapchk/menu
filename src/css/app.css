@@ -326,6 +326,7 @@ body {
 }
 .header {
   background-color: aqua;
+  transition: all 600ms ease-in-out;
 }
 .header__inner {
   margin-inline: auto;
@@ -337,6 +338,11 @@ body {
   flex-wrap: nowrap;
 }
 
+@media screen and (max-width: 960px) {
+  .header {
+    background-color: lightgreen;
+  }
+}
 .menu {
   align-self: flex-end;
   display: flex;
@@ -361,16 +367,31 @@ body {
 .menu__item:last-child {
   border-top-right-radius: 0.25rem;
 }
+.menu__item:link {
+  border-bottom: 0.1875rem solid lightgray;
+}
+.menu__item:visited {
+  border-bottom: 0.1875rem solid lightgray;
+}
 .menu__item--active, .menu__item:hover {
+  border-bottom: 0.1875rem solid lightgray;
   color: white;
   background-color: darkgray;
 }
+.menu__item:active {
+  border-bottom: 0.1875rem solid lightgray;
+}
+
 .logo {
   background-image: url("../img/logo.svg");
   width: 4rem;
   height: 4rem;
   margin: 0.625rem;
   display: inline-block;
+  transition: all 400ms ease-in-out;
+}
+.logo:hover {
+  transform: rotate(360deg);
 }
 
 /*# sourceMappingURL=app.css.map */

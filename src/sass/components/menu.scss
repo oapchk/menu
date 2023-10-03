@@ -22,6 +22,7 @@
     }
 
     @include link(white, darkgray) {
+      border-bottom: rem(3px) solid lightgray;
     }
   }
 }
